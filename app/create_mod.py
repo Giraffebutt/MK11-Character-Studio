@@ -143,6 +143,8 @@ def run_gui(smoke=None, initial=None):
         def built(self, out):
             self.output = out
             self.log("Finished game files: %s" % os.path.join(out, "Asset"), "PASS")
+            self.log("To load the mod in the game you need separate community mod-loading tools - see INSTALL.txt in "
+                     "the output folder.")
             self.show_warning()
 
         def show_warning(self):

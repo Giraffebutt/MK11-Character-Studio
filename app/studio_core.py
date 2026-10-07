@@ -484,8 +484,19 @@ INSTALL = """About this build
 Asset\\ holds the modified game files (.xxx and .psf). Your game folder wasn't changed.
 Open preview_*.glb in Blender to check how your character came out.
 
-- The game normally refuses modified files ("Game data is corrupted"). This tool doesn't get around that.
-- Play with modded files offline only. Modding may go against the game's terms; it's your call.
+Loading this mod in the game
+----------------------------
+MK11 Character Studio only makes the modified files. The game doesn't load modified files by itself, so you need
+a community mod-loading setup. MK11 modders usually use:
+  - Ultimate ASI Loader   https://github.com/ThirteenAG/Ultimate-ASI-Loader
+  - ASIMK11 (MKSwap)      https://github.com/thethiny/ASIMK11
+These are separate projects, not part of MK11 Character Studio. Follow their own instructions to set them up.
+Once MKSwap is set up, copy the files from Asset\\ into the MKSwap Asset folder as ASIMK11 describes.
+Only the mod loader is needed: leave ASIMK11's unlocker and cheat features off.
+
+Good to know
+------------
+- Play with modded files offline only. Modding may go against the game's terms, so it's at your own risk.
 - Keep these files to yourself: they're mostly the game's own data. To share your mod, share its Mod Project
   instead (your model, textures and mod.json). Others build it with Create Mod from their own game.
 """

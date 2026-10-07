@@ -78,6 +78,9 @@ HOW TO INSTALL
 4. Select your Mortal Kombat 11 installation if requested.
 5. Press Create Mod.
 6. The required modified game files will be generated locally.
+7. To load them in the game you need a community mod-loading setup (such as Ultimate ASI Loader with ASIMK11's
+   MKSwap). These are separate projects, not part of MK11 Character Studio or this mod; see the INSTALL.txt
+   that Create Mod writes next to the generated files.
 
 This download does not contain the original Mortal Kombat 11 package files required by the mod.
 Base character: {character} (needs {files} from your own installation).

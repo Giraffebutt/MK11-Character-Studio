@@ -8,6 +8,9 @@ Keep this repository free of game content and other people's work:
   understanding of the file format; don't copy or translate code from the game or from reverse-engineering tools.
 - No code, patterns or instructions that patch, hook or inject into the game, or that disable or bypass its integrity
   checks, DRM, anti-cheat or online services.
+- Documentation may point to the independent mod-loading projects (Ultimate ASI Loader, ASIMK11) and their own
+  instructions. Never include their files, reproduce their code or functionality, install or configure them from the
+  tool, or document their settings for turning off the game's file checks, unlockers or cheats.
 - No entitlement or access-control bypass. The tool may process any file already present in the user's own
   installation, base game and DLC alike, but must never: unlock content the user does not own; bypass Steam or game
   entitlement checks; patch the game to enable unowned content; download game or DLC files from any source; decrypt or

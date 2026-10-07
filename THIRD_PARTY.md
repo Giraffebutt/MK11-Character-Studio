@@ -21,6 +21,22 @@
 The game's files, including these libraries, are covered by the game's own license terms. Whether using them outside
 the game is permitted by those terms is your responsibility.
 
+## Mod-loading tools mentioned in the documentation (not included)
+
+The README and the generated `INSTALL.txt` mention two independent community projects that players commonly use to
+make Mortal Kombat 11 load modified game files:
+
+| Project | What it does | Where to get it |
+|---|---|---|
+| Ultimate ASI Loader (ThirteenAG) | Loads ASI plugins when a game starts | [github.com/ThirteenAG/Ultimate-ASI-Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) |
+| ASIMK11 (thethiny) | Provides the MKSwap mod loader for MK11 | [github.com/thethiny/ASIMK11](https://github.com/thethiny/ASIMK11) |
+
+- They are **not included** in this repository, and their binaries are not redistributed.
+- **None of their code is used** in MK11 Character Studio, which doesn't install, configure, start or reproduce them.
+- They have their own authors, licenses and terms. Users get them separately from the projects above.
+- Their authors have not endorsed MK11 Character Studio, and MK11 Character Studio doesn't need or endorse ASIMK11's
+  unlocker or cheat features.
+
 ## Credits and references
 
 - **[MKX Character Studio](https://github.com/Giraffebutt/MKX-Character-Studio)** (PolyForm Noncommercial 1.0.0,

@@ -25,6 +25,8 @@ ABOUT = ("MK11 Character Studio is an unofficial fan-made tool, not affiliated w
          "NetherRealm Studios. Mortal Kombat and its characters belong to their owners.\n\n"
          "No game files are included. It reads your own game folder and writes to your mod folder. "
          "It never unlocks DLC.\n\n"
+         "MK11 Character Studio creates mod files only. Loading modified files in the game needs separate "
+         "community tools (see the README). Those projects are independent and aren't included with this app.\n\n"
          "Share Mod Projects, not the generated game files. Play modded files offline. "
          "Modding may go against the game's terms, so use it at your own risk.\n\n"
          "Written by an AI from the maintainer's instructions.\n"
@@ -545,7 +547,9 @@ HELP = """1. Export tab: export the original mesh you are replacing (a .glb, plu
 3. Convert tab: choose the same character, your .glb, press Check model, pick what to hide, then Convert.
 4. Results are in <mod folder>\\converted\\<name>. Open preview_*.glb in Blender to check; see INSTALL.txt.
 5. Sharing: share <mod folder>\\mod_projects\\<name> (your model, textures and mod.json). Never share the generated
-   .xxx/.psf files. Others build the mod from their own game with "Create Mod.cmd"."""
+   .xxx/.psf files. Others build the mod from their own game with "Create Mod.cmd".
+6. Playing: the game needs separate community mod-loading tools to load the files - see INSTALL.txt in the build
+   folder or the README."""
 
 if __name__ == "__main__":
     run_gui(selftest="--selftest" in sys.argv,

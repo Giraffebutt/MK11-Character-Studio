@@ -25,7 +25,7 @@ Tip: keep the folder somewhere short, like `D:\MK11 Character Studio`. Very long
 3. **Convert tab:** pick the same character and your `.glb`, click **Check model**, choose what to hide, then click
    **Convert**.
 4. **Test it:** the game files are in `converted\<name>\Asset\` inside your mod folder. Open `preview_*.glb` in Blender
-   to check the result first.
+   to check the result first. To see it in the game, see [Loading mods in the game](#loading-mods-in-the-game).
 
 By default the old face, hair and worn gear are hidden and weapons stay visible. Click a row in the list to change it.
 
@@ -56,14 +56,47 @@ MyJokerMod/
 2. Double-click **`Create Mod.cmd`** (or drag the mod's `mod.json` onto it).
 3. Click **Create Mod**.
 
-Create Mod builds the mod from *your* game files into `created_mods\<name>\Asset\`. If a game file it needs is
+Create Mod builds the mod from *your* game files into `created_mods\<name>\Asset\`. Then load it as described in
+[Loading mods in the game](#loading-mods-in-the-game). If a game file it needs is
 missing, it tells you. It never downloads game files. It only accepts models, images and text files, checks them,
 and never runs anything that comes with a mod.
+
+## Loading mods in the game
+
+MK11 Character Studio makes the modified game files, but Mortal Kombat 11 doesn't load modified files by itself.
+The MK11 modding community usually uses two separate tools for that:
+
+- [Ultimate ASI Loader](https://github.com/ThirteenAG/Ultimate-ASI-Loader) by ThirteenAG: loads ASI plugins when
+  the game starts.
+- [ASIMK11](https://github.com/thethiny/ASIMK11) by thethiny: provides **MKSwap**, the mod loader used by the MK11
+  modding community.
+
+These are independent projects. They aren't included with, made by or connected to MK11 Character Studio. For
+installing, setting up and updating them, follow their own instructions.
+
+Once MKSwap is set up, copy the files from your mod's `Asset\` folder into the MKSwap `Asset` folder, as ASIMK11's
+instructions describe. To go back to the original character, remove them again.
+
+- You only need ASIMK11's mod loader. Character Studio doesn't need, use or endorse its unlocker or cheat features,
+  so leave those off.
+- Play with modded files **offline only**.
+- Neither Warner Bros. Games nor NetherRealm Studios supports these tools, and using them is at your own risk.
+
+```
+MK11 Character Studio                 Separate community tools
+  makes modified .xxx/.psf files        Ultimate ASI Loader
+  does NOT change the game's .exe         loads ASIMK11 when the game starts
+  does NOT install or load plugins      ASIMK11 (MKSwap)
+  does NOT turn off file checks           lets the game load the modified files
+  does NOT unlock DLC or enable cheats
+```
 
 ## Good to know
 
 - Play with modded files **offline only**.
-- The game normally refuses modified files. This tool doesn't change or get around that.
+- The game normally rejects modified files. MK11 Character Studio doesn't change the game's program, turn off its
+  file checks, or install any mod loader. Loading the files needs separate community tools: see
+  [Loading mods in the game](#loading-mods-in-the-game).
 - DLC characters you have installed work like any other character. The tool never unlocks or downloads DLC.
 - Your model replaces an existing body and keeps its skeleton: up to 65,535 vertices and 4 bone weights per vertex.
 - Colours look off? Edit `app\config\texture_defaults.json` and convert again.
