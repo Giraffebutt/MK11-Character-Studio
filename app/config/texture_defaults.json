@@ -1,0 +1,16 @@
+{
+  "_about": "Defaults for textures you don't supply. Values come from analysing Liu Kang's LIU_SKIN_A material. The colour result in-game is NOT yet confirmed; edit these values and re-convert if colours look tinted.",
+  "color_parameter": "ColorOverride",
+  "parameters": {
+    "ColorOverride": "solid:128,128,128,0",
+    "Normal": "solid:128,128,255,192",
+    "RMA": "solid:0,0,240,0",
+    "Id": "solid:248,0,8,255",
+    "Tone": "solid:0,128,0,255"
+  },
+  "rules": {
+    "ColorOverride": {"alpha": 0, "_why": "alpha 1 = Liu's special 'override' regions (palette element 0); 0 = normal palette path"},
+    "Normal": {"flip_green": true, "alpha": 192, "_why": "Blender bakes OpenGL normal maps; MK11 expects DirectX (green flipped). Alpha matches Liu's typical value."},
+    "Id": {"_why": "red = palette element x 16 + 8; element 15 (248) is neutral grey 0.498 in both colourway rows"}
+  }
+}

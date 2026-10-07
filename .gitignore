@@ -1,0 +1,79 @@
+# Allowlist: only reviewed source files are tracked. Add new files deliberately.
+# (This doesn't affect files already committed or ZIP uploads.)
+/*
+!/.gitignore
+!/.gitattributes
+!/README.md
+!/LICENSE
+!/LICENSES/
+!/THIRD_PARTY.md
+!/CONTRIBUTING.md
+!/Launch Studio.cmd
+!/Create Mod.cmd
+!/Setup Dependencies.cmd
+!/Blender Tools/
+!/app/
+
+/Blender Tools/*
+!/Blender Tools/blender_check_weights.py
+
+/app/*
+!/app/requirements.txt
+!/app/studio_cli.py
+!/app/studio_core.py
+!/app/studio_gui.py
+!/app/test_studio.py
+!/app/mod_project.py
+!/app/create_mod.py
+!/app/test_mod_project.py
+!/app/blender/
+!/app/config/
+!/app/mk11/
+
+/app/blender/*
+!/app/blender/make_reference_blend.py
+/app/config/*
+!/app/config/texture_defaults.json
+/app/mk11/*
+!/app/mk11/__init__.py
+!/app/mk11/convert.py
+!/app/mk11/gltf.py
+!/app/mk11/mesh.py
+!/app/mk11/oodle.py
+!/app/mk11/package.py
+!/app/mk11/props.py
+!/app/mk11/texture.py
+
+/LICENSES/*
+!/LICENSES/GPL-2.0.txt
+
+# never, even if an allowlist entry above would match (game packages, exports, mod folders, Mod Projects)
+*.xxx
+*.psf
+*.tfc
+*.glb
+*.jpg
+*.jpeg
+*.tga
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.zip
+*.7z
+*.rar
+mod.json
+exports/
+converted/
+created_mods/
+mod_projects/
+*.blend
+*.blend1
+*.png
+*.dds
+*.dll
+*.exe
+*.pdb
+studio_settings.json
+__pycache__/
+.venv/
